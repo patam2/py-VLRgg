@@ -10,7 +10,7 @@ class Match:
     first: str
     second: str
     match_data: list[Map]
-    _map_data: Iterable
+    _map_data: list
 
     def __repr__(self) -> str:
         return f"Match(score={self.score}, first={self.first}, second={self.second}, match_data=[DataFrame,])"
