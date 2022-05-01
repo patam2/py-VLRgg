@@ -25,3 +25,7 @@ Map methods:
 * team_1_table - pd.DataFrame
 * team_2_table - pd.DataFrame
 * score - str
+
+Example post_match() from examples.py:
+
+![image](https://user-images.githubusercontent.com/88111864/166153770-1477b968-2707-4424-a535-491f1a141af1.png)
