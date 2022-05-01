@@ -62,5 +62,5 @@ class VLRgg:
             first=first,
             second=second,
             score=sline,
-            _map_data=iter(map_data),
+            _map_data=map_data,
         )

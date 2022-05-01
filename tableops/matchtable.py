@@ -36,7 +36,7 @@ def parse_table_data(table: list, agents: Iterator[str]):
             if "\xa0" in segment:
                 if segment[2:] == ["\xa0"] * 33:
                     return make_DataFrame(tables)
-            segment.insert(1, next(agents))
+            segment.insert(1, ', '.join(next(agents)))
             new_table.append(segment)  # there has to be a better way
         tables.append(new_table)
     # Make list of tables, add column

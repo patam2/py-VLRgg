@@ -9,7 +9,7 @@ class Match:
     score: str
     first: str
     second: str
-    match_data: list
+    match_data: list[Map]
     _map_data: Iterable
 
     def __repr__(self) -> str:
@@ -17,9 +17,9 @@ class Match:
 
     @property
     def maps(self) -> list:
-        out, maps = [], iter(self.map_names)
+        out, maps, d = [], iter(self.map_names), iter(self._map_data)
         for i in range(2, len(self.match_data), 2):
-            data = next(self._map_data)
+            data = next(d)
             out.append(
                 Map(
                     map_name=next(maps),
