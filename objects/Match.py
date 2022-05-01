@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from typing import Iterable
+from pandas import DataFrame
 from objects.Map import Map
 
 
@@ -9,7 +9,7 @@ class Match:
     score: str
     first: str
     second: str
-    match_data: list[Map]
+    match_data: list[DataFrame]
     _map_data: list
 
     def __repr__(self) -> str:
