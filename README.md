@@ -1,5 +1,5 @@
 # py-VLRgg
-VLR.gg wrapper
+(A buggy) VLR.gg wrapper utilizing lxml and sockets 
 
 
 Usage ->
